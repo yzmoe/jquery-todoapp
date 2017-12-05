@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdn.bootcss.com/normalize/5.0.0/normalize.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container"> <!--容器-->
+    <h1>todo list</h1>
+    <form class="add-task">
+      <input type="text"
+             placeholder="添加任务"
+             name="content"
+             autofocus
+             autocomplete="off"
+             >
+      <button type="submit" name="button">submit</button>
+    </form>  <!--添加任务-->
+    <div class="task-list"> <!--清单列表-->
+    </div>
+    <div class="task-detail"> <!--任务详情-->
+    </div>
+  </div>
+  <div class="task-detail-mask"></div>
+  <script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/store.js/1.3.20/store.min.js"></script>
+  <script src="js/base.js" charset="utf-8"></script>
+</body>
+</html>

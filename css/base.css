@@ -1,0 +1,111 @@
+*{
+  box-sizing: border-box;
+  transition: background .2s;
+}
+body{
+  background-color: #22849a;
+}
+input{
+  border: 0;
+  border-radius: 3px;
+  padding: 10px;
+}
+button{
+  display: inline-block;
+  border: 0;
+  padding: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: 0;
+}
+.container{
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+h1{
+  text-align: center;
+  font-family: "Microsoft YaHei";
+}
+.add-task input{
+  display: block;
+  width: 84%;
+  float: left;
+  margin-right: 1%;
+}
+button{
+  width: 15%;
+  background-color: #5bb3aa;
+  color: #fff;
+}
+.add-task button:hover{
+  background-color: #6ccac0;
+}
+.task-list{
+  margin-top: 10px;
+}
+.task-item{
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 2px;
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+}
+.task-item_completed{
+  background-color: rgba(50,50,50,.3)
+}
+.task-item:hover{
+  background-color: #eee;
+}
+.task-item_completed:hover{
+  background-color: rgba(50,50,50,.2)
+}
+.task-content{
+  margin-left: 10px;
+}
+.task-detail{
+  position: absolute;
+  top:102%;
+  background: #fff;
+  border-radius: 3px;
+  color: #333;
+  width: 100%;
+  display: none;
+  z-index: 2;
+}
+.task-detail .content{
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 900;
+}
+.task-detail textarea{
+  width: 100%;
+  min-height: 100px;
+  resize: none;
+  padding: 10px;
+}
+.task-detail .btn{
+  text-align: center;
+  margin-bottom: 4px;
+}
+.task-detail-mask{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(100,100,100,.3);
+  border-radius: 3px;
+  display: none;
+  z-index: 1;
+}
+.action{
+  color: #999;
+  font-size: 90%;
+  float: right;
+  margin-right: 5px;
+}
+.action:hover{
+  color: #333;
+}
